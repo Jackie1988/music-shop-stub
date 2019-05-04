@@ -1,6 +1,8 @@
 # music-shop-stub
 
-### Sbt run
+### How to run
+
+sbt run
 
 ### End points
 
