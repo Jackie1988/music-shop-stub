@@ -1,17 +1,11 @@
 package controllers
 
-import javax.inject.Inject
-
 import play.api.libs.json.Json
-import play.api._
 import play.api.mvc._
 import models.Product
 
-import scala.concurrent.ExecutionContext
-
-class StoreController @Inject()(cc: PostControllerComponents)(
-  implicit ec: ExecutionContext)
-  extends PostBaseController(cc) {
+class StoreController
+  extends ControllerHelpers {
 
   val products: List[Product] = List(
     Product("1", "Dean USA Dimebag Guitar", "Mahogany Body and Set-In Neck", "609.00 GBP", 12),
